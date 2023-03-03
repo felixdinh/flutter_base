@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:flutter_base/config/environment.dart';
 
 Future<void> main() async {
-  dotenv.load(
-    fileName: '.env',
-  );
+  await Environment.setupEnv();
   runApp(const MyApp());
 }
 

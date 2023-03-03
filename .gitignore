@@ -141,3 +141,5 @@ coverage/
 
 #Other
 .env
+.env.dev
+.env.prod
