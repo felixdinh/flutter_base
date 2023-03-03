@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_base/config/app_config.dart';
 import 'package:flutter_base/config/environment.dart';
 
 Future<void> main() async {
-  await Environment.setupEnv();
+  await AppConfig.initialized();
   runApp(const MyApp());
 }
 

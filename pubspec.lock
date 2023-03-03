@@ -105,7 +105,7 @@ packages:
   path:
     dependency: transitive
     description:
-      name: path
+      name: route_path.dart
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.2"
