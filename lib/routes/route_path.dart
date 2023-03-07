@@ -1,11 +1,18 @@
-class Routes {
-  const Routes._();
-  static const HOME = _Path.home;
+class RouteName {
+  const RouteName._();
 
+  static const home = 'home';
+  static const categories = 'categories';
+  static const products = 'products';
 }
 
-class _Path{
-  const _Path._();
+class RoutePaths {
+  const RoutePaths._();
+  static const home = '/';
+  static const productListByCateId = 'products/:${RouteParam.category}';
+  static const categories = 'categories';
+}
 
-  static const home = '/home';
+class RouteParam{
+  static const category = 'category';
 }
